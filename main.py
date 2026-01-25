@@ -7,14 +7,14 @@ from playwright.async_api import async_playwright
 # Load Configuration
 def load_config():
     try:
-        with open("configx.yaml", "r") as f:
+        with open("config.yaml", "r") as f:
             return yaml.safe_load(f)
     except FileNotFoundError:
         return {
             "api_summary_url": "https://squad.iix.net.id/api/v4/lg/rs1-ipv4/bgp-summary",
             "route_base_url": "https://squad.iix.net.id/lg/rs1-ipv4/routes/protocol/",
-            "primary_output": "prefix-iix.txt",
-            "all_output": "all-prefix-iix.txt",
+            "primary_output": "prefix.txt",
+            "all_output": "all-prefix.txt",
             "concurrency": 10
         }
 
