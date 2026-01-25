@@ -26,7 +26,7 @@ Extracts BGP prefixes from IIX Looking Glass with status-based filtering.
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/chrisnadhe/ix-prefix-scraper
     cd iix-prefix-scraper
     ```
 
@@ -41,8 +41,8 @@ Edit `config.yaml` to set your target exchange and output file:
 
 ```yaml
 ix_name: "IIX-Jakarta"
-api_summary_url: "[https://squad.iix.net.id/api/v4/lg/rs1-ipv4/bgp-summary](https://squad.iix.net.id/api/v4/lg/rs1-ipv4/bgp-summary)"
-route_base_url: "[https://squad.iix.net.id/lg/rs1-ipv4/routes/protocol/](https://squad.iix.net.id/lg/rs1-ipv4/routes/protocol/)"
+api_summary_url: "https://squad.iix.net.id/api/v4/lg/rs1-ipv4/bgp-summary"
+route_base_url: "https://squad.iix.net.id/lg/rs1-ipv4/routes/protocol/"
 primary_output: "prefix.txt"
 all_output: "all-prefix.txt"
 concurrency: 10
@@ -52,12 +52,12 @@ concurrency: 10
 Run the scraper using the uv wrapper:
     ```bash
     uv run main.py
+    ```
 
 
 ## 📄 Output Example
 The resulting prefix.txt will look like this:
 
-    ```plaintext
     103.10.10.0/24
     103.11.12.0/23
     202.158.0.0/19
