@@ -27,7 +27,7 @@ Extracts BGP prefixes from IIX Looking Glass with status-based filtering.
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/chrisnadhe/ix-prefix-scraper
-    cd iix-prefix-scraper
+    cd ix-prefix-scraper
     ```
 
 2.  **Initialize environment and install dependencies:**
