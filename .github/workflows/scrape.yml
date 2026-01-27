@@ -3,7 +3,7 @@ name: IIX Prefix Scraper
 on:
   schedule:
     # 23:28 UTC is 06:28 WIB the next day
-    - cron: '28 23 * * *'
+    - cron: '8 3 * * *'
   workflow_dispatch:   # Allows you to run it manually from the "Actions" tab
 
 jobs:
